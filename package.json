@@ -1,0 +1,9 @@
+{
+  "name": "gifv",
+  "title": "Imgur .gifv",
+  "id": "jid1-KYVIyERTvB3YQw",
+  "description": "Loads Imgur .gif images as .gifv",
+  "author": "Ben Burns",
+  "license": "MPL 2.0",
+  "version": "1.0"
+}
