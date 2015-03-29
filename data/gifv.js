@@ -1,6 +1,11 @@
-window.stop(); // Stop loading the page
+var contentType = document.contentType; // page-mod offers no type support, so we need to use document.contentType
 
-var domain  = location.origin // *imgur.com
-var urlPath = location.pathname // /*.gif
+if(contentType == "image/gif") { // Make sure the content type is a gif
 
-location.replace(domain + urlPath.substr(0, urlPath.lastIndexOf(".")) + ".gifv"); // Replace the .gif extension with .gifv
+    window.stop(); // Stop loading the page
+
+    var domain  = location.origin // *imgur.com
+    var urlPath = location.pathname // /*.ext
+
+    location.replace(domain + urlPath.substr(0, urlPath.lastIndexOf(".")) + ".gifv"); // Replace the current extension with .gifv
+}
